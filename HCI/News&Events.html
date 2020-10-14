@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<title>PANADURA URBAN COUNCIL</title>
+
+<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+<style>
+
+.header{
+  overflow: hidden;
+  width: auto;
+}
+
+.headerleft{
+  background-color: #8C001A;
+
+}
+
+.headerright{
+  padding: 0;
+
+}
+
+.container-fluid{
+  height:100vh;
+
+}
+
+#logo img{
+  width:100px;
+  height: auto;
+  padding-left: 10%;
+}
+
+#logop img{
+  width:130px;
+  height: auto;
+  float: right;
+  padding-top: 10px;
+}
+
+#panadura{
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 50px;
+
+}
+
+.card{
+  float: right;
+  height: 142px;
+  border: 1px solid;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #e68a00;
+}
+
+.fa-user{
+  text-align: center;
+  padding-top: 5%;
+}
+
+.card-body a{
+  text-align: center;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.nav{
+  background-color: #e68a00;
+  margin-top: 1%;
+  border: 2px solid;
+  border-radius: 10px;
+  z-index: 1;
+  position:relative;
+
+}
+
+.nav a{
+  text-decoration: none;
+  color:#000000;
+  font-size: 18px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display:inline-block;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {display: inline-block;}
+ul li:hover {background: #F2BB66;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  display: none;
+  z-index: 1;
+}
+
+ul li ul li {
+  background: #F2BB66;
+  display: block;
+  border: 2px;
+}
+
+ul li ul li a {display:block !important;}
+ul li ul li:hover {background: #FFE5B4;}
+
+
+.btn-dark{
+  background-color: #8C001A;
+  margin-right: 10px;
+
+}
+.headerone {
+  z-index: 1;
+  width: 98.7%;
+  background-color: #ffffe6;
+}
+
+.headerone h2 {
+  text-align: center;
+  padding-top: 300px;
+}
+
+.progress-container {
+  width: 96.7%;
+  height: 8px;
+  background: #ccc;
+  position: fixed;
+  top: 19.5%;
+  margin-top: 0.3%
+}
+.progress-bar {
+  height: 8px;
+  background: #e68a00;
+  width: 0%;
+  z-index: 1;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 50px auto;
+  width: 80%;
+  /* border-style: solid; */
+  border-color: #e68a00;
+  border-radius: 25px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  background-color: #ffffb3;
+  padding-top: 200px;
+}
+
+.clearfix {
+  overflow: auto;
+  background-color: #EDDA74;
+
+}
+
+.img2 {
+  float: right;
+}
+
+  .content div  {
+  border: 3px solid #e68a00;
+  width: 95%;
+  margin-left: 30px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+h6 {
+  text-align: right;
+}
+
+*{
+  margin:0px;
+  padding:0px;
+}
+.accordion
+{
+  border:2px solid #e68a00;
+  width :80%;
+  height:350px;
+  margin:50px auto;
+  overflow :hidden;
+  border-radius: 20px;
+  z-index: -1;
+  position: relative;
+}
+.accordion ul
+{
+  list-style:none;
+  cursor:pointer;
+}
+.accordion ul li
+{
+    position :relative;
+    width:calc(100% / 8);
+    float :left;
+    transition: all 0.5s;
+    box-shadow:0px 0px 30px black;
+}
+.accordion ul li img
+{
+  width :650px;
+  height:350px;
+}
+.accordion ul:hover li
+{
+    width:calc((100% - 600px) / 7);
+}
+.accordion ul li:hover
+{
+    width :600px;
+}
+.accordion ul li a
+{
+  position :absolute;
+  bottom:0;
+  left :0;
+  background-color :rgba(0, 0, 0, 0.5);
+  padding:15px;
+  color:white;
+  text-decoration:none;
+  width:100%;
+  font-size:15px;
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+}
+
+body{
+  background-color: #ffffe6;
+}
+
+.down{
+  margin-top:5%;
+}
+
+.footer {
+
+left: ;
+margin-bottom: 1%;
+width: 100%;
+height: 100px;
+background-color:#0C090A;
+color: white;
+text-align: center;
+
+}
+
+.copyright{
+margin-left: 100px;
+margin-right: 10px;
+}
+
+</style>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="fix" style="position:fixed;background-color: #ffffe6;">
+    <div class="header col-lg-12">
+      <div class="row">
+        <div class="headerleft col-lg-10">
+          <div class="row">
+            <div id="logo" class="col-sm-2 align-self-end"><img src="img/logo.png" alt=""></div>
+            <div id="panadura" class="col-sm-8 align-self-center">PANADURA URBAN COUNCIL</div>
+            <div id="logop" class="col-sm-2 align-self-center"><img src="img/logop.png" alt=""></div>
+          </div>
+        </div>
+        <div class="headerright d-flex justify-content-end col-lg-2">
+          <div id="admin" class="col-sm-2 align-self-center"><div class="card" style="width: 14rem;">
+            <i class="fas fa-user fa-3x"></i>
+            <div class="card-body">
+              <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Admin%20Login.html" class="btn btn-dark" style="color:#fff;">Admin Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Home_page.html">Home</a>
+    <ul>
+      <li>
+        <a href="#">The Council</a>
+        <ul>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/vision&mission.html">Vision and Mission</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Council%20Histroy.html">Council History</a></li>
+          <li><a href="#">General Information</a></li>
+          <li><a href="#">Council Manager</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Council%20Map.html">Council Map</a></li>
+          <li><a href="#">Administrative structure</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Services</a>
+        <ul>
+          <li><a href="#">Road Development</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/PublicMarket.html">Public Market</a></li>
+          <li><a href="#">Grounds</a></li>
+          <li><a href="#">Cemeteries</a></li>
+          <li><a href="#">Libraries</a></li>
+          <li><a href="#">Kindergartens</a></li>
+          <li><a href="#">Waste Management</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Children Parks</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Auditorium.html">Auditorium</a></li>
+          <li><a href="#">Swimming Pool</a></li>
+          <li><a href="#">Recycling</a></li>
+        </ul>
+      </li>
+      <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/gallery.html">Gallery</a>
+      <li>
+        <a href="#">Download</a>
+        <ul>
+          <li><a href="#">Application Form</a></li>
+          <li><a href="#">Budget Reports</a></li>
+          <li><a href="#">Council Reports</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Tenders</a>
+        <ul>
+          <li><a href="#">Tender Application Forms</a></li>
+          <li><a href="#">Find Tenders</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Payments</a>
+        <ul>
+          <li><a href="#">Assesments</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Inquiry</a>
+        <ul>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/streetlampsinquiry.html">Street Lamps</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Waste_Management.html ">Waste Management</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Health%20Inquiry.html">Health</a></li>
+          <li><a href="#">Other</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Suggestions.html">Suggestions</a></li>
+        </ul>
+      </li>
+      <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/make%20reservation.html">Reservation</a>
+
+      <li>
+        <a href="#">Registration</a>
+        <ul>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Enteranaccount.html">Enter an Account</a></li>
+          <li><a href="#">User Information</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Information Act</a>
+        <ul>
+          <li><a href="#">About the Information Act</a></li>
+          <li><a href="#">Information Officers</a></li>
+          <li><a href="#">Information</a></li>
+          <li><a href="#">Information Act</a></li>
+        </ul>
+      </li>
+
+      <a href="#">Feedback</a>
+      <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/ContactUs.html">Contact Us</a>
+    </div>
+s
+
+    <div class="calendar" style="float:right; margin-right: 5%; padding-top: 1%;">
+      <div class="row">
+        <form action="/action_page.php">
+          <input class="btn" type="date" name="birthday" style="border: 2px solid; border-radius: 5px;background-color:white;">
+        </form>
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+          <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px;" placeholder="Search.." name="search2">
+          <button class="btn btn-dark" type="submit" style="margin-left:1px;border: 2px solid; border-radius: 5px;margin-top:-5px;"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div><br><br>
+</div>
+    <div class="headerone">
+      <h2>View News</h2>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
+    <div class="content">
+
+    <h3 style="text-align:center;">The Alms-Giving of Galawatimodara Pre School</h3>
+    <div class="clearfix">
+      <img class="img2" src="img/alms.jpg" alt="Festival" width="200" height="170">
+      Alms Giving Ceremony organized by Galawetimodara Pre School on 28.08.2020.
+    </div>
+    <h6>Updated Time:2020-08-31 08:10:00</h6>
+    <hr><br>
+
+
+     <h3 style="text-align:center;">Blood Donation Camp</h3>
+     <div class="clearfix">
+      <img class="img2" src="img/blood1.jpg" alt="Blood" width="200" height="170">
+      Blood Donation Camp organized by Panadura Urban Council, Migettuwatte Gunananda Thero Memorial Public Library and Lions Club will be held on 12<sup>th</sup> October 2020 at 8.30 pm 1.30 pm at Panadura Town Hall.
+    </div>
+    <h6>Updated Time:2020-10-03 08:10:00</h6>
+    <hr><br>
+
+
+     <h3 style="text-align:center;">Opening of the new building</h3>
+     <div class="clearfix">
+    <img class="img2" src="img/building.jpg" alt="Building" width="200" height="170">
+      Opening Ceremony of the new building constructed for the office building of the Industrial Division and the Maintenance of the Automotive Machinery Maintenance Ceremony to mark the one year anniversary of the appointment of the new Council on Thursday 15<sup>th</sup> October 2020 at 8.40 am.All arrangements are made with auspicious moment.We invite you all to attend.
+      <br><br>
+      Secretary, Panadura Urban Council.
+    </div>
+    <h6>Updated Time:2020-10-03 13:15:00</h6>
+    <hr><br>
+
+
+    <h3 style="text-align:center;">Grand Criket Tournament - 2020</h3>
+     <div class="clearfix">
+    <img class="img2" src="img/cricket.jpg" alt="Cricket" width="200" height="170">
+      The grand cricket tournament between Panadura Police and Pinwaththa Police organized by the Panadura Municipal Council will be held on Sunday 10<sup>th</sup> October 2020.It will be held at the Municipal Stadium from 8.00 am.
+      <br>Invite to all of you !!!
+    </div>
+    <h6>Updated Time:2020-10-04 16:12:06</h6>
+    <hr><br>
+
+    <h3 style="text-align:center;">Tree Planting Campagin</h3>
+    <div class="clearfix">
+      <img class="img2" src="img/tree.jpg" alt="Tree" width="200" height="170">
+      The plan distrubution program organized by the community section was carried out on 20<sup>th</sup> of September 2020 at the Manicipal Council Office under the patronage of the Secretary.
+    </div>
+    <h6>Updated Time:2020-09-21 09:12:00</h6>
+    <hr><br>
+
+     <h3 style="text-align:center;">Literary Festival</h3>
+     <div class="clearfix">
+      <img class="img2" src="img/literary.jpg" alt="Festival" width="200" height="170">
+      Revival Literary Festival will be held under the potronage of the Hon. Mayor of the Panadura Urban Council on Monday 23<sup>rd</sup> October at 8.30 am at the Panadura Town Hall with music by <strong><i>Verteran Lyricist Wasantha Kumara Kobawaka</i></strong> and <strong><i>Verteran Writer Sandaruwan Liyanaarachchi</i></strong>.Invitation to you / all of you.
+      <br><br>Panadura Urban Council.
+    </div>
+    <h6>Updated Time:2020-10-05 08:40:00</h6>
+    <hr><br>
+
+     <h3 style="text-align:center;">Health Medical Clinic</h3>
+     <div class="clearfix">
+    <img class="img2" src="img/medical.jpg" alt="Medical" width="200" height="170">
+      The Health Medical Clinic, jointly organized be the Panadura Municipal Council and the Migettuwatte Gunananda Tero Memorial Public Library, will be held on 27.05.2020 at the Library Auditorium from 7.30 to 11.30 am.
+    </div>
+    <h6>Updated Time:2020-05-20 11:30:50</h6>
+    <hr><br>
+
+    <h3 style="text-align:center;">Renovation of Panadura Beach Children's Park</h3>
+     <div class="clearfix">
+      <img class="img2" src="img/play1.jpg" alt="Festival" width="200" height="170">
+      Panadura Urban Council puts forward another community service.Renovation of Panadura Beach Children's Park was discussed with the sponsorship of Mrs.Nadeeka Ranasinghe who was crowned as the Bridal Beauty of Sri Lanka.
+    </div>
+    <h6>Updated Time:2020-10-08 16:40:20</h6>
+
+    </div>
+
+
+    <div class="accordion">
+        <ul>
+          <li>
+            <img src="img/alms.jpg">
+            <a href="#">The Alms-Giving Ceremony</a>
+          </li>
+          <li>
+            <img src="img/blood1.jpg">
+            <a href="#">Blood Donation Camp</a>
+          </li>
+          <li>
+            <img src="img/building.jpg">
+            <a href="#">Opening of the new building</a>
+          </li>
+          <li>
+            <img src="img/cricket.jpg">
+            <a href="#">Grand Criket Tournament</a>
+          </li>
+          <li>
+            <img src="img/tree.jpg">
+            <a href="#">Tree Planting Campagin</a>
+          </li>
+          <li>
+            <img src="img/literary.jpg">
+            <a href="#">Literary Festival - 2020</a>
+          </li>
+          <li>
+            <img src="img/medical.jpg">
+            <a href="#">Health Medical Clinic</a>
+          </li>
+          <li>
+            <img src="img/play1.jpg">
+            <a href="#">Renovation of Children's Park</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+
+    <!-- <-Footer-->
+
+    <div class="footer" col-md-12 col-lg-12 col-xl-12>
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
+          <a href="#"<i class="fab fa-cc-paypal fa-2x" style="margin-top: 2%;margin-left: -200px;text-decoration:none;color: white;"></i></a>
+          <a href="#"<i class="fab fa-cc-amex fa-2x"  style="margin-top: 2%;margin-left:3%;text-decoration:none;color: white;"></i></a>
+          <a href="#"<i class="fab fa-cc-visa fa-2x" style="margin-top: 2%;margin-left:3%;text-decoration:none;color: white;"></i></a>
+          <a href="#"<i class="fab fa-cc-mastercard fa-2x" style="margin-top: 2%;margin-left:3%;text-decoration:none;color: white;" ></i></a>
+        </div>
+        <div class="copyright" style="margin-top:4%;">
+          <h6> copyright@2020 Panadura.uc.gov.lk</h6>
+        </div>
+        <div class="col-md-5 col-lg-5 col-xl-5" style="margin-top: 2%;">
+          <a href="https://www.facebook.com/pages/category/Government-Organization/Panadura-Urban-Council-265242854102860/" target="_blank"<i class="fab fa-facebook-square fa-2x" style="margin-top: 2%;margin-left:50%;color:white;text-decoration:none;"></i></a>
+          <a href="http://www.gmail.com/" target="_blank"<i class="fas fa-envelope fa-2x" style="margin-top: 2%;margin-left:3%;color: white;text-decoration:none;"></i></a>
+          <a href="http://www.instagram.com/" target="_blank"<i class="fab fa-instagram-square fa-2x" style="margin-top: 2%;margin-left:3%;color:white;text-decoration:none;"></i></a>
+          <a href="http://www.twitter.com/" target="_blank"<i class="fab fa-twitter-square fa-2x" style="margin-top: 2%;margin-left:3%;color:white;text-decoration:none;"></i></a>
+
+      </div>
+    </div>
+
+  </body>
+</html>
